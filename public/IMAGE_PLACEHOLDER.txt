@@ -1,0 +1,18 @@
+# Placeholder for profile.jpg
+
+Please add your profile photo here named as `profile.jpg` (or profile.png)
+
+This image will be displayed in the Home section of your portfolio.
+
+Image requirements:
+- Format: JPG, PNG, or WebP
+- Recommended size: 800x800px (square)
+- Professional headshot or portrait
+- File size: Under 500KB
+
+To add your photo:
+1. Prepare a professional photo
+2. Name it: profile.jpg (or profile.png)
+3. Place it in this public folder
+
+For more details, see IMAGE_SETUP.md in the root folder.

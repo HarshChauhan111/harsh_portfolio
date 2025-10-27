@@ -1,0 +1,12 @@
+# Placeholder for resume.pdf
+
+Please add your actual resume/CV file here named as `resume.pdf`
+
+This file will be downloaded when users click the "Download Resume" button on your portfolio.
+
+To add your resume:
+1. Export your CV as PDF
+2. Name it exactly: resume.pdf
+3. Replace this file with your actual resume.pdf
+
+For more details, see IMAGE_SETUP.md in the root folder.
