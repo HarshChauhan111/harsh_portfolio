@@ -1,56 +1,54 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { FaTrophy, FaCertificate, FaStar, FaAward } from 'react-icons/fa';
 
 const achievements = [
   {
     icon: FaTrophy,
-    title: 'Google Associate Android Developer',
-    issuer: 'Google Developers',
-    date: '2022',
-    description: 'Certified Android developer demonstrating proficiency in Android app development.',
-    color: 'from-yellow-500 to-orange-500'
-  },
-  {
-    icon: FaCertificate,
-    title: 'Flutter Development Bootcamp',
-    issuer: 'Udemy',
-    date: '2021',
-    description: 'Completed comprehensive Flutter development course with high distinction.',
-    color: 'from-blue-500 to-cyan-500'
+    title: 'Mission Blackout - 1st Runner Up',
+    issuer: 'Cyber Protectors',
+    date: '2024',
+    description: 'Capture The Flag - Mission Blackout Cyber Treasure Hunt.',
+    color: 'from-yellow-500 to-orange-500',
+    image: '/achivements/certificate/Mission_Blackout_1st_RunnerUp.jpeg'
   },
   {
     icon: FaStar,
-    title: 'Hackathon Winner - Mobile Track',
-    issuer: 'TechFest 2023',
+    title: 'BCA - 1st Rank',
+    issuer: 'My Caste',
     date: '2023',
-    description: 'First place in mobile app development category for innovative health tracking app.',
-    color: 'from-purple-500 to-pink-500'
-  },
-  {
-    icon: FaAward,
-    title: 'AWS Certified Developer',
-    issuer: 'Amazon Web Services',
-    date: '2022',
-    description: 'Certified in developing and maintaining AWS-based applications.',
-    color: 'from-orange-500 to-red-500'
-  },
-  {
-    icon: FaTrophy,
-    title: 'Best App Design Award',
-    issuer: 'Mobile Dev Summit',
-    date: '2023',
-    description: 'Recognized for exceptional UI/UX design in mobile application development.',
-    color: 'from-green-500 to-emerald-500'
+    description: 'Achieved 1st Rank in Bachelor of Computer Applications.',
+    color: 'from-purple-500 to-pink-500',
+    image: '/achivements/certificate/BCA_1st_Rank.jpeg'
   },
   {
     icon: FaCertificate,
-    title: 'React Native Specialization',
-    issuer: 'Coursera',
-    date: '2021',
-    description: 'Successfully completed React Native specialization with honors.',
-    color: 'from-indigo-500 to-purple-500'
+    title: 'Docker Certificate',
+    issuer: 'Atmiya University',
+    date: '2024',
+    description: 'Certified in Docker containerization and deployment.',
+    color: 'from-blue-500 to-cyan-500',
+    image: '/achivements/certificate/Docker_certificate.jpeg'
+  },
+  {
+    icon: FaAward,
+    title: 'Entrepreneur Certificate',
+    issuer: 'Government of Gujarat',
+    date: '2024',
+    description: 'Completed entrepreneurship and business development program.',
+    color: 'from-green-500 to-emerald-500',
+    image: '/achivements/certificate/entrepreneur_certificate.jpeg'
+  },
+  {
+    icon: FaCertificate,
+    title: 'Python Programming Certificate',
+    issuer: 'Python Institute',
+    date: '2022',
+    description: 'Certified in Python programming fundamentals and advanced concepts.',
+    color: 'from-indigo-500 to-purple-500',
+    image: '/achivements/certificate/python_programming_certificate.jpeg'
   },
 ];
 
@@ -84,32 +82,46 @@ export default function Achievements() {
                 whileHover={{ y: -10 }}
                 className="group relative"
               >
-                <div className="glass-effect rounded-xl p-6 border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 hover:shadow-glow h-full">
-                  {/* Icon */}
-                  <motion.div
-                    whileHover={{ rotate: 360, scale: 1.2 }}
-                    transition={{ duration: 0.6 }}
-                    className={`w-16 h-16 rounded-full bg-gradient-to-br ${achievement.color} flex items-center justify-center mb-4 shadow-glow`}
-                  >
-                    <IconComponent className="text-3xl text-white" />
-                  </motion.div>
+                <div className="glass-effect rounded-xl overflow-hidden border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 hover:shadow-glow h-full flex flex-col">
+                  {/* Certificate Image */}
+                  {achievement.image && (
+                    <div className="relative w-full h-64 overflow-hidden bg-gray-800">
+                      <Image
+                        src={achievement.image}
+                        alt={achievement.title}
+                        fill
+                        className="object-contain group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  )}
+                  
+                  <div className="p-6 flex-1 flex flex-col">
+                    {/* Icon */}
+                    <motion.div
+                      whileHover={{ rotate: 360, scale: 1.2 }}
+                      transition={{ duration: 0.6 }}
+                      className={`w-16 h-16 rounded-full bg-gradient-to-br ${achievement.color} flex items-center justify-center mb-4 shadow-glow`}
+                    >
+                      <IconComponent className="text-3xl text-white" />
+                    </motion.div>
 
-                  {/* Content */}
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
-                    {achievement.title}
-                  </h3>
+                    {/* Content */}
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
+                      {achievement.title}
+                    </h3>
 
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-gray-400 text-sm">{achievement.issuer}</span>
-                    <span className="text-purple-400 text-sm font-semibold">{achievement.date}</span>
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-gray-400 text-sm">{achievement.issuer}</span>
+                      <span className="text-purple-400 text-sm font-semibold">{achievement.date}</span>
+                    </div>
+
+                    <p className="text-gray-400 text-sm">
+                      {achievement.description}
+                    </p>
+
+                    {/* Glow Effect on Hover */}
+                    <div className={`absolute inset-0 bg-gradient-to-br ${achievement.color} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity pointer-events-none`}></div>
                   </div>
-
-                  <p className="text-gray-400 text-sm">
-                    {achievement.description}
-                  </p>
-
-                  {/* Glow Effect on Hover */}
-                  <div className={`absolute inset-0 bg-gradient-to-br ${achievement.color} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity pointer-events-none`}></div>
                 </div>
               </motion.div>
             );
