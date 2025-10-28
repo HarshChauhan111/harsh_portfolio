@@ -38,7 +38,7 @@ const skillCategories = [
       { name: 'Firebase', icon: SiFirebase },
       { name: 'SQLite', icon: FaDatabase },
       { name: 'Hive', icon: FaDatabase },
-      { name: 'Room DB', icon: FaDatabase },
+      { name: 'MongoDB', icon: FaDatabase },
     ]
   },
   {
@@ -53,6 +53,7 @@ const skillCategories = [
     title: 'Tools',
     skills: [
       { name: 'Git', icon: SiGit },
+      { name: 'Android Studio', icon: SiAndroid },
       { name: 'Figma', icon: SiFigma },
       { name: 'Postman', icon: SiPostman },
     ]

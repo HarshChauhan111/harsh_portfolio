@@ -25,6 +25,15 @@ const achievements = [
   },
   {
     icon: FaCertificate,
+    title: 'Code Carnival Hackathon Certificate',
+    issuer: 'Atmiya University',
+    date: '2025',
+    description: 'National Level Hackathon Code Carnival Season 2 - 36 hours hackathon.',
+    color: 'from-blue-500 to-cyan-500',
+    image: '/achivements/certificate/Hackathon_Certificate.jpeg'
+  },
+  {
+    icon: FaCertificate,
     title: 'Docker Certificate',
     issuer: 'Atmiya University',
     date: '2024',
