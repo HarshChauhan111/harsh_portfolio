@@ -5,44 +5,44 @@ import { FaBriefcase, FaCalendar } from 'react-icons/fa';
 
 const experiences = [
   {
-    company: 'TechCorp Solutions',
-    role: 'Senior Mobile Developer',
-    duration: 'Jan 2022 - Present',
-    location: 'Remote',
+    company: 'BrainyBeam Technologies Pvt. Ltd.',
+    role: 'Machine Learning Intern',
+    duration: 'May 2025 - July 2025',
+    location: 'Ahamedabad Remote',
     responsibilities: [
-      'Led development of 5+ mobile applications using Flutter and React Native',
-      'Implemented clean architecture and MVVM patterns',
-      'Mentored junior developers and conducted code reviews',
-      'Optimized app performance reducing load time by 40%',
+      'Used Pandas and NumPy for data cleaning, preprocessing, and manipulation of large datasets.',
+      'Conducted EDA and visualizations with Matplotlib and Seaborn to identify patterns.',
+      'Performed feature extraction and dimensionality reduction to enhance model performance.',
+      'Applied and optimized machine learning models for classification and regression tasks.',
     ],
     color: 'from-purple-500 to-pink-500'
   },
-  {
-    company: 'Digital Innovations Inc',
-    role: 'Mobile Application Developer',
-    duration: 'Jun 2020 - Dec 2021',
-    location: 'New York, NY',
-    responsibilities: [
-      'Developed and maintained native Android applications',
-      'Integrated RESTful APIs and real-time databases',
-      'Collaborated with design team to implement pixel-perfect UIs',
-      'Improved app ratings from 3.5 to 4.7 stars',
-    ],
-    color: 'from-blue-500 to-cyan-500'
-  },
-  {
-    company: 'StartUp Labs',
-    role: 'Junior Flutter Developer',
-    duration: 'Jan 2019 - May 2020',
-    location: 'San Francisco, CA',
-    responsibilities: [
-      'Built cross-platform mobile apps with Flutter',
-      'Implemented state management using Bloc and Provider',
-      'Worked on Firebase integration for authentication and storage',
-      'Participated in agile development sprints',
-    ],
-    color: 'from-green-500 to-emerald-500'
-  },
+  // {
+  //   company: 'Digital Innovations Inc',
+  //   role: 'Mobile Application Developer',
+  //   duration: 'Jun 2020 - Dec 2021',
+  //   location: 'New York, NY',
+  //   responsibilities: [
+  //     'Developed and maintained native Android applications',
+  //     'Integrated RESTful APIs and real-time databases',
+  //     'Collaborated with design team to implement pixel-perfect UIs',
+  //     'Improved app ratings from 3.5 to 4.7 stars',
+  //   ],
+  //   color: 'from-blue-500 to-cyan-500'
+  // },
+  // {
+  //   company: 'StartUp Labs',
+  //   role: 'Junior Flutter Developer',
+  //   duration: 'Jan 2019 - May 2020',
+  //   location: 'San Francisco, CA',
+  //   responsibilities: [
+  //     'Built cross-platform mobile apps with Flutter',
+  //     'Implemented state management using Bloc and Provider',
+  //     'Worked on Firebase integration for authentication and storage',
+  //     'Participated in agile development sprints',
+  //   ],
+  //   color: 'from-green-500 to-emerald-500'
+  // },
 ];
 
 export default function Experience() {
