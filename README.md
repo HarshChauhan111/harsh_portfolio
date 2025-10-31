@@ -22,37 +22,6 @@ A stunning, dark-themed portfolio website featuring immersive 3D animations, smo
 - **Icons:** React Icons
 - **Form Handling:** EmailJS (ready to configure)
 
-## 📦 Installation
-
-### Prerequisites
-
-- Node.js 18.x or higher
-- npm or yarn package manager
-
-### Setup Steps
-
-1. **Clone or navigate to the project directory:**
-   ```bash
-   cd harsh_portfolio
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-   If you encounter issues, try:
-   ```bash
-   npm install --legacy-peer-deps
-   ```
-
-3. **Run the development server:**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser:**
-   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 🎯 Project Structure
 
@@ -94,74 +63,6 @@ Update the following files with your information:
 6. **components/sections/Contact.tsx** - Contact information
 7. **components/Footer.tsx** - Social media links
 
-### EmailJS Configuration
-
-To enable the contact form:
-
-1. Sign up at [EmailJS](https://www.emailjs.com/)
-2. Create an email service and template
-3. Update `components/sections/Contact.tsx` with your:
-   - Service ID
-   - Template ID
-   - Public Key
-
-Example:
-```typescript
-import emailjs from '@emailjs/browser';
-
-emailjs.send(
-  'YOUR_SERVICE_ID',
-  'YOUR_TEMPLATE_ID',
-  formData,
-  'YOUR_PUBLIC_KEY'
-);
-```
-
-### Color Scheme
-
-Modify colors in `tailwind.config.ts`:
-
-```typescript
-colors: {
-  primary: {
-    // Your primary colors
-  },
-  dark: {
-    // Your dark theme colors
-  }
-}
-```
-
-### Add Your Profile Image
-
-Replace the placeholder in `components/sections/Home.tsx`:
-
-```tsx
-<Image 
-  src="/path/to/your-image.jpg"
-  alt="Your Name"
-  width={320}
-  height={320}
-  className="rounded-full"
-/>
-```
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Visit [Vercel](https://vercel.com)
-3. Import your repository
-4. Deploy with one click
-
-### Other Platforms
-
-The site can be deployed to:
-- Netlify
-- AWS Amplify
-- GitHub Pages (with static export)
-- Any Node.js hosting
 
 ## 📱 Sections Overview
 
@@ -232,13 +133,8 @@ npm run lint
 
 ## 📄 License
 
-This project is open source and available for personal and commercial use.
+This project is for my personal use and not available for personal and commercial use.
 
-## 🤝 Support
-
-For issues or questions:
-- Create an issue in the repository
-- Contact: harsh@example.com
 
 ## 🌟 Acknowledgments
 
