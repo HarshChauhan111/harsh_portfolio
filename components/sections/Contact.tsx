@@ -86,7 +86,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Have a project in mind or want to discuss opportunities? Let's connect!
+            Have a project in mind or want to discuss opportunities? Let&apos;s connect!
           </p>
         </motion.div>
 
@@ -136,9 +136,9 @@ export default function Contact() {
               transition={{ delay: 0.5 }}
               className="mt-12 glass-effect rounded-xl p-6 border border-purple-500/20"
             >
-              <h4 className="text-xl font-semibold text-white mb-3">Let's Build Something Amazing!</h4>
+              <h4 className="text-xl font-semibold text-white mb-3">Let&apos;s Build Something Amazing!</h4>
               <p className="text-gray-400 text-sm">
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
+                I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
                 Whether you need a mobile app, consultation, or just want to say hi, feel free to reach out!
               </p>
             </motion.div>
@@ -240,7 +240,7 @@ export default function Contact() {
                   animate={{ opacity: 1, y: 0 }}
                   className="p-4 bg-green-500/20 border border-green-500/50 rounded-lg text-green-400 text-center"
                 >
-                  Message sent successfully! I'll get back to you soon.
+                  Message sent successfully! I&apos;ll get back to you soon.
                 </motion.div>
               )}
 

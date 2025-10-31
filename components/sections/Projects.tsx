@@ -81,7 +81,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            A showcase of my recent work and mobile applications I've built
+            A showcase of my recent work and mobile applications I&apos;ve built
           </p>
         </motion.div>
 

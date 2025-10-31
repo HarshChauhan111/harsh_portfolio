@@ -26,7 +26,7 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="text-purple-400 text-lg mb-4"
             >
-              Hello, I'm
+              Hello, I&apos;m
             </motion.p>
             
             <motion.h1
